@@ -4,3 +4,11 @@ layout: default
 	<h1>Planets of the Universe</h1>
 test mere test
 
+<ul>
+	{% for post in site.categories.code limit:2 %}	
+	<li>
+		<a href="" >{{post.title}}</a>
+		<p>{{post.meta}}</p>	
+	</li>
+	{% endfor %}
+</ul>
