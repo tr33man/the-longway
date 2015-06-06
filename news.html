@@ -5,10 +5,10 @@ layout: default
 I will try to make some small tutorials for my self here.
 
 <ul>
-	{% for news in site.categories.news limit:2%}	
+	{% for tut in site.categories.tut limit:2%}	
 	<li>
-		<a href="" >{{news.title}}</a>
-		<p>{{news.meta}}</p>	
+		<a href="" >{{tut.title}}</a>
+		<p>{{tut.meta}}</p>	
 	</li>
 	{% endfor %}
 </ul>
